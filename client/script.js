@@ -81,7 +81,7 @@ const handleSubmit = async (e)=>{
   const response = await fetch('https://codez.onrender.com/',{
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       prompt: data.get('prompt')
