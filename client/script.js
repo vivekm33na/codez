@@ -78,10 +78,13 @@ const handleSubmit = async (e)=>{
 
   // fetch data from server i.e bot's response
 
+  const apiKey = "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"
+
   const response = await fetch('https://codez.onrender.com',{
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`
     },
     body: JSON.stringify({
       prompt: data.get('prompt')
